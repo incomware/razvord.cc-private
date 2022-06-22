@@ -1,0 +1,90 @@
+-- razvord.cc | private
+-- This Will Be Public It Might Say Private But Its Prob Public If Someone Wants It Just Send It To Them If You Want
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Topmakethisdraggable = Instance.new("TextLabel")
+local LineForTop = Instance.new("TextLabel")
+local dontmakedraggable = Instance.new("Frame")
+local Main_2 = Instance.new("TextButton")
+local Section = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Main.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Main.Position = UDim2.new(0.376377165, 0, 0.10829103, 0)
+Main.Size = UDim2.new(0, 429, 0, 500)
+Main.Active = true
+Main.Selectable = true
+Main.Draggable = true
+
+Topmakethisdraggable.Name = "Topmakethisdraggable"
+Topmakethisdraggable.Parent = Main
+Topmakethisdraggable.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Topmakethisdraggable.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Topmakethisdraggable.Size = UDim2.new(0, 429, 0, 23)
+Topmakethisdraggable.Font = Enum.Font.Arial
+Topmakethisdraggable.Text = " razvord.cc | private"
+Topmakethisdraggable.TextColor3 = Color3.fromRGB(255, 255, 255)
+Topmakethisdraggable.TextSize = 15.000
+Topmakethisdraggable.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Topmakethisdraggable.TextWrapped = true
+Topmakethisdraggable.TextXAlignment = Enum.TextXAlignment.Left
+
+LineForTop.Name = "Line For Top"
+LineForTop.Parent = Main
+LineForTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LineForTop.BorderColor3 = Color3.fromRGB(0, 255, 0)
+LineForTop.Position = UDim2.new(0, 0, 0.0492505357, 0)
+LineForTop.Size = UDim2.new(0, 429, 0, 0)
+LineForTop.Font = Enum.Font.SourceSans
+LineForTop.Text = ""
+LineForTop.TextColor3 = Color3.fromRGB(0, 0, 0)
+LineForTop.TextSize = 14.000
+
+dontmakedraggable.Name = "dontmakedraggable"
+dontmakedraggable.Parent = Main
+dontmakedraggable.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+dontmakedraggable.BorderColor3 = Color3.fromRGB(25, 25, 25)
+dontmakedraggable.Position = UDim2.new(0.0186480191, 0, 0.074074097, 0)
+dontmakedraggable.Size = UDim2.new(0, 413, 0, 455)
+
+Main_2.Name = "Main"
+Main_2.Parent = dontmakedraggable
+Main_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Main_2.BackgroundTransparency = 1.000
+Main_2.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Main_2.Position = UDim2.new(0.0169491526, 0, 0.0143198036, 0)
+Main_2.Size = UDim2.new(0, 73, 0, 16)
+Main_2.Font = Enum.Font.Code
+Main_2.Text = "Main"
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextSize = 15.000
+
+Section.Name = "Section"
+Section.Parent = dontmakedraggable
+Section.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Section.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Section.Position = UDim2.new(0.0169491526, 0, 0.0835322142, 0)
+Section.Size = UDim2.new(0, 179, 0, 222)
+
+TextLabel.Parent = Section
+TextLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel.Position = UDim2.new(0, 0, -0.0360359661, 0)
+TextLabel.Size = UDim2.new(0, 172, 0, 17)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "   Section"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
